@@ -1,1 +1,5195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
+  <title>Villa Congre Nº3 — Construction Feasibility & Delivery Study</title>
+
+  <meta
+    name="description"
+    content="Construction feasibility, technical scope, cost transparency, procurement and delivery study for Villa Congre Nº3, Cala Llamp, Andratx, Mallorca."
+  />
+
+  <meta name="theme-color" content="#151a16" />
+
+  <meta property="og:title" content="Villa Congre Nº3" />
+  <meta
+    property="og:description"
+    content="Construction Feasibility & Delivery Study · Cala Llamp · Andratx · Mallorca."
+  />
+
+  <style>
+    /* =========================================================
+       TOKENS
+    ========================================================= */
+
+    :root {
+      --ivory: #f2efe7;
+      --stone: #e7e2d7;
+      --paper: #fbfaf6;
+
+      --ink: #1c211d;
+      --muted: #5d5d51;
+
+      --olive: #273128;
+      --olive-soft: #536151;
+
+      --bronze: #9b8761;
+      --bronze-text: #756240;
+
+      --dark: #151a16;
+      --light: #f7f4ec;
+
+      --line: rgba(28, 33, 29, 0.18);
+      --line-dark: rgba(255, 255, 255, 0.14);
+
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Inter, Arial, Helvetica, sans-serif;
+
+      --max: 1500px;
+      --pad: clamp(22px, 5vw, 82px);
+    }
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--ivory);
+      color: var(--ink);
+    }
+
+    body {
+      margin: 0;
+      background: var(--ivory);
+      font-family: var(--sans);
+      line-height: 1.55;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    /* =========================================================
+       TYPOGRAPHY
+    ========================================================= */
+
+    .display {
+      margin: 0;
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+
+    .eyebrow,
+    .micro,
+    .evidence {
+      font-size: 11px;
+      line-height: 1.3;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .lede {
+      margin: 0;
+      max-width: 840px;
+      font-size: clamp(18px, 2vw, 26px);
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
+    .evidence {
+      display: inline-flex;
+      border: 1px solid currentColor;
+      padding: 7px 9px;
+      color: var(--bronze-text);
+    }
+
+    /* =========================================================
+       GLOBAL LAYOUT
+    ========================================================= */
+
+    .section {
+      width: 100%;
+      max-width: var(--max);
+      margin: auto;
+      padding: clamp(82px, 10vw, 155px) var(--pad);
+    }
+
+    .section.full {
+      max-width: none;
+    }
+
+    .section.soft {
+      max-width: none;
+      background: var(--stone);
+    }
+
+    .section.dark {
+      max-width: none;
+      background: var(--dark);
+      color: var(--light);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 28px;
+      padding-top: 22px;
+      margin-bottom: clamp(42px, 6vw, 78px);
+      border-top: 1px solid var(--line);
+    }
+
+    .dark .section-heading {
+      border-color: var(--line-dark);
+    }
+
+    .section-number {
+      color: var(--bronze-text);
+      font-family: var(--serif);
+      font-size: 30px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(38px, 5vw, 70px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(38px, 7vw, 110px);
+      align-items: start;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
+    .nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 100;
+      height: 68px;
+
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      padding: 0 var(--pad);
+
+      background: rgba(242, 239, 231, 0.92);
+      backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      white-space: nowrap;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 23px;
+      margin-left: auto;
+    }
+
+    .nav-links a {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .nav button,
+    .nav select {
+      min-height: 40px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: inherit;
+      padding: 8px 11px;
+    }
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      position: relative;
+      min-height: 100svh;
+
+      display: grid;
+      align-items: end;
+
+      background:
+        radial-gradient(circle at 70% 30%, #6f796d 0, transparent 30%),
+        linear-gradient(135deg, #455247, #161c17 70%);
+
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,0.12),
+          rgba(0,0,0,0.15) 42%,
+          rgba(0,0,0,0.76)
+        );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+
+      width: 100%;
+      max-width: var(--max);
+      margin: auto;
+      padding: 110px var(--pad) 48px;
+    }
+
+    .hero-kicker {
+      margin-bottom: 28vh;
+    }
+
+    .hero h1 {
+      margin: 0;
+
+      max-width: 1150px;
+
+      font-family: var(--serif);
+      font-size: clamp(62px, 10.5vw, 160px);
+      font-weight: 400;
+      line-height: 0.82;
+      letter-spacing: -0.055em;
+    }
+
+    .hero-meta {
+      margin-top: 36px;
+      padding-top: 20px;
+
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 40px;
+
+      border-top: 1px solid rgba(255,255,255,0.45);
+    }
+
+    .hero-meta p {
+      margin: 0;
+    }
+
+    /* =========================================================
+       FACT STRIP
+    ========================================================= */
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      background: var(--dark);
+      color: white;
+    }
+
+    .fact {
+      min-height: 135px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 25px var(--pad);
+
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .fact strong {
+      margin-bottom: 8px;
+
+      font-family: var(--serif);
+      font-size: clamp(28px, 3vw, 50px);
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .fact small {
+      opacity: 0.72;
+
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* =========================================================
+       IMAGE COMPONENTS
+    ========================================================= */
+
+    .editorial-image {
+      overflow: hidden;
+      background: #dad7cf;
+    }
+
+    .editorial-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ratio-wide {
+      aspect-ratio: 16 / 9;
+    }
+
+    .ratio-tall {
+      aspect-ratio: 4 / 5;
+    }
+
+    .ratio-square {
+      aspect-ratio: 1;
+    }
+
+    .caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      padding: 11px 0;
+
+      border-top: 1px solid var(--line);
+
+      color: var(--muted);
+
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* =========================================================
+       SUMMARY
+    ========================================================= */
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      margin-top: 60px;
+
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .summary-grid article {
+      padding: 25px;
+
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .summary-grid strong {
+      display: block;
+
+      font-family: var(--serif);
+      font-size: 34px;
+      font-weight: 400;
+    }
+
+    .summary-grid span {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* =========================================================
+       FLOWS
+    ========================================================= */
+
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+
+      margin: 35px 0;
+    }
+
+    .flow span {
+      padding: 10px 12px;
+
+      border: 1px solid var(--line);
+
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* =========================================================
+       CURRENT SITE
+    ========================================================= */
+
+    .site-layout {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .site-photo {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    .annotations {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+
+      margin-top: 1px;
+
+      background: var(--line);
+    }
+
+    .annotations span {
+      padding: 13px;
+
+      background: var(--paper);
+
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .terrain {
+      margin-top: 70px;
+    }
+
+    .terrain-scroll {
+      overflow-x: auto;
+
+      background: white;
+
+      border: 1px solid var(--line);
+    }
+
+    .terrain-scroll img {
+      min-width: 900px;
+    }
+
+    .story-rail {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      gap: 1px;
+
+      margin-top: 55px;
+
+      background: var(--line);
+    }
+
+    .story-rail > div {
+      padding: 20px;
+
+      background: var(--paper);
+    }
+
+    .story-rail b {
+      display: block;
+
+      font-family: var(--serif);
+      font-size: 31px;
+      font-weight: 400;
+      color: var(--bronze-text);
+    }
+
+    .story-rail span {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .executed-codes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      margin: 20px 0;
+    }
+
+    .executed-codes span {
+      min-width: 56px;
+
+      padding: 10px;
+
+      border: 1px solid var(--line);
+
+      text-align: center;
+    }
+
+    /* =========================================================
+       QUANTITIES
+    ========================================================= */
+
+    .quantity-list {
+      margin-top: 40px;
+
+      border-top: 1px solid var(--line);
+    }
+
+    .quantity-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+
+      gap: 25px;
+
+      padding: 15px 0;
+
+      border-bottom: 1px solid var(--line);
+
+      align-items: baseline;
+    }
+
+    .quantity-copy {
+      display: flex;
+      gap: 18px;
+      align-items: baseline;
+    }
+
+    .quantity-copy small {
+      color: var(--muted);
+
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .quantity-value {
+      font-family: var(--serif);
+      font-size: 22px;
+      white-space: nowrap;
+    }
+
+    /* =========================================================
+       STRATEGY
+    ========================================================= */
+
+    .critical-path {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 7px;
+
+      margin-top: 40px;
+    }
+
+    .critical-path span {
+      padding: 12px 14px;
+
+      border: 1px solid var(--line);
+
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .arrow {
+      color: var(--bronze-text);
+    }
+
+    .interfaces {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 1px;
+
+      margin-top: 55px;
+
+      background: var(--line);
+    }
+
+    .interfaces div {
+      padding: 22px;
+
+      background: var(--paper);
+
+      font-family: var(--serif);
+      font-size: 21px;
+    }
+
+    /* =========================================================
+       MATERIALS
+    ========================================================= */
+
+    .material-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+
+      margin: 80px 0;
+
+      align-items: center;
+    }
+
+    .material-block:nth-child(even) .material-visual {
+      order: 2;
+    }
+
+    .material-placeholder {
+      min-height: 440px;
+
+      display: flex;
+      align-items: end;
+
+      padding: 26px;
+
+      color: white;
+
+      background:
+        linear-gradient(
+          150deg,
+          #776f61,
+          #332f29 65%,
+          #181a17
+        );
+    }
+
+    .material-placeholder.alt {
+      background:
+        linear-gradient(
+          150deg,
+          #bbb1a0,
+          #7b7468 45%,
+          #3d443d
+        );
+    }
+
+    .material-placeholder.dark {
+      background:
+        linear-gradient(
+          145deg,
+          #373934,
+          #141714
+        );
+    }
+
+    .material-placeholder span {
+      max-width: 280px;
+
+      font-family: var(--serif);
+      font-size: 32px;
+    }
+
+    .spec {
+      margin-top: 26px;
+
+      border-top: 1px solid var(--line);
+    }
+
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+
+      padding: 12px 0;
+
+      border-bottom: 1px solid var(--line);
+
+      font-size: 13px;
+    }
+
+    .spec-row span:last-child {
+      color: var(--muted);
+      text-align: right;
+    }
+
+    .decision-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 1px;
+
+      margin-top: 60px;
+
+      background: var(--line);
+    }
+
+    .decision-grid article {
+      padding: 24px;
+
+      background: var(--paper);
+    }
+
+    .decision-grid h3 {
+      margin: 14px 0 8px;
+
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    .decision-grid p {
+      margin-bottom: 0;
+
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================================================
+       BUDGET
+    ========================================================= */
+
+    .cost-primary {
+      display: grid;
+      grid-template-columns: 1.5fr 0.7fr;
+
+      gap: 70px;
+
+      align-items: end;
+
+      padding-top: 35px;
+
+      border-top: 1px solid var(--line);
+    }
+
+    .cost-range {
+      display: block;
+
+      font-family: var(--serif);
+      font-size: clamp(62px, 9vw, 128px);
+      font-weight: 400;
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+    }
+
+    .cost-target {
+      display: block;
+
+      font-family: var(--serif);
+      font-size: clamp(40px, 5vw, 70px);
+      font-weight: 400;
+    }
+
+    .cost-copy {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 42px;
+
+      margin: 50px 0;
+    }
+
+    .cost-warning {
+      padding: 20px;
+
+      border: 1px solid var(--bronze);
+
+      color: var(--muted);
+    }
+
+    .drivers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 1px;
+
+      margin: 40px 0;
+
+      background: var(--line);
+    }
+
+    .drivers span {
+      padding: 17px;
+
+      background: var(--paper);
+
+      font-size: 12px;
+    }
+
+    .pem {
+      margin-top: 80px;
+      padding-top: 32px;
+
+      border-top: 1px solid var(--bronze);
+    }
+
+    .pem strong {
+      display: block;
+
+      font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 400;
+    }
+
+    .allowances {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      gap: 1px;
+
+      background: var(--line);
+    }
+
+    .allowance {
+      padding: 20px;
+
+      background: var(--paper);
+    }
+
+    .allowance strong {
+      display: block;
+
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    /* =========================================================
+       BOQ
+    ========================================================= */
+
+    .boq {
+      margin-top: 70px;
+    }
+
+    .boq-row {
+      display: grid;
+      grid-template-columns: 45px 1fr 125px;
+
+      gap: 16px;
+
+      align-items: center;
+
+      padding: 10px 0;
+
+      border-top: 1px solid var(--line);
+
+      font-size: 12px;
+    }
+
+    .boq-label {
+      position: relative;
+
+      padding-bottom: 9px;
+    }
+
+    .boq-bar {
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+
+      height: 2px;
+
+      background: var(--bronze);
+    }
+
+    .boq-price {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* =========================================================
+       PROCUREMENT
+    ========================================================= */
+
+    .procurement-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 1px;
+
+      margin-top: 45px;
+
+      background: var(--line);
+    }
+
+    .procurement-card {
+      padding: 22px;
+
+      background: var(--paper);
+    }
+
+    .procurement-card h3 {
+      margin: 10px 0;
+
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    /* =========================================================
+       PROGRAMME
+    ========================================================= */
+
+    .programme-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 60px;
+
+      margin-bottom: 50px;
+    }
+
+    .programme-number {
+      font-family: var(--serif);
+      font-size: clamp(80px, 11vw, 150px);
+      line-height: 0.9;
+    }
+
+    .procurement-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+
+      margin: 25px 0;
+    }
+
+    .procurement-buttons button {
+      padding: 9px 11px;
+
+      border: 1px solid rgba(255,255,255,0.28);
+
+      background: transparent;
+      color: white;
+    }
+
+    .procurement-buttons button.active {
+      background: white;
+      color: var(--dark);
+    }
+
+    .programme-note {
+      min-height: 55px;
+
+      color: #bbbdb5;
+      font-size: 13px;
+    }
+
+    .gantt-scroll {
+      overflow-x: auto;
+    }
+
+    .gantt {
+      min-width: 1000px;
+    }
+
+    .months-row,
+    .gantt-row {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+    }
+
+    .months {
+      display: grid;
+      grid-template-columns: repeat(24, 1fr);
+
+      color: #999;
+      font-size: 9px;
+    }
+
+    .months span {
+      text-align: center;
+    }
+
+    .gantt-row {
+      min-height: 55px;
+
+      border-top: 1px solid var(--line-dark);
+
+      transition: opacity 0.25s ease;
+    }
+
+    .gantt-label {
+      padding: 10px 15px 10px 0;
+
+      font-size: 11px;
+    }
+
+    .gantt-label strong {
+      display: block;
+    }
+
+    .gantt-label small {
+      color: #999;
+    }
+
+    .gantt-track {
+      position: relative;
+
+      background:
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent calc(100% / 24 - 1px),
+          rgba(255,255,255,0.055) calc(100% / 24 - 1px),
+          rgba(255,255,255,0.055) calc(100% / 24)
+        );
+    }
+
+    .gantt-bar {
+      position: absolute;
+
+      top: 20px;
+
+      height: 12px;
+
+      background: #a99979;
+    }
+
+    .gantt-row.dimmed {
+      opacity: 0.22;
+    }
+
+    .gantt-row.highlight .gantt-bar {
+      top: 17px;
+
+      height: 18px;
+
+      background: white;
+    }
+
+    .scenarios {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 1px;
+
+      margin-top: 45px;
+
+      background: rgba(255,255,255,0.15);
+    }
+
+    .scenario {
+      padding: 22px;
+
+      background: var(--dark);
+    }
+
+    .scenario strong {
+      display: block;
+
+      font-family: var(--serif);
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    /* =========================================================
+       RISK / KPI
+    ========================================================= */
+
+    .risk-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 1px;
+
+      margin-top: 40px;
+
+      background: var(--line);
+    }
+
+    .risk-grid article {
+      padding: 25px;
+
+      background: var(--paper);
+    }
+
+    .risk-grid h3 {
+      margin: 0 0 10px;
+
+      font-family: var(--serif);
+      font-size: 29px;
+      font-weight: 400;
+    }
+
+    .risk-grid p {
+      margin-bottom: 0;
+
+      color: var(--muted);
+    }
+
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 15px;
+
+      margin-top: 40px;
+    }
+
+    .kpi {
+      padding-top: 12px;
+
+      border-top: 1px solid var(--line);
+
+      color: var(--muted);
+    }
+
+    /* =========================================================
+       CONCLUSION
+    ========================================================= */
+
+    .conclusion {
+      position: relative;
+
+      min-height: 75vh;
+
+      display: grid;
+      align-items: end;
+
+      overflow: hidden;
+
+      color: white;
+
+      background:
+        radial-gradient(circle at 60% 20%, #687168, transparent 30%),
+        linear-gradient(140deg, #353e35, #101411);
+    }
+
+    .conclusion::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,0.1),
+          rgba(0,0,0,0.72)
+        );
+    }
+
+    .conclusion-content {
+      position: relative;
+      z-index: 2;
+
+      width: 100%;
+      max-width: var(--max);
+      margin: auto;
+
+      padding: 70px var(--pad);
+    }
+
+    .conclusion h2 {
+      margin: 0;
+
+      max-width: 1150px;
+
+      font-family: var(--serif);
+      font-size: clamp(46px, 7vw, 96px);
+      font-weight: 400;
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+
+      padding: 42px var(--pad);
+
+      border-top: 1px solid var(--line);
+
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* =========================================================
+       STUDY INDEX
+    ========================================================= */
+
+    .study-index {
+      position: fixed;
+      z-index: 1000;
+      inset: 0;
+
+      display: none;
+
+      overflow-y: auto;
+
+      padding: 95px var(--pad) 50px;
+
+      background: #111611;
+      color: white;
+    }
+
+    .study-index.open {
+      display: block;
+    }
+
+    .study-index-header {
+      position: absolute;
+      top: 24px;
+      left: var(--pad);
+      right: var(--pad);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .study-index-header button {
+      width: 44px;
+      height: 44px;
+
+      border: 1px solid rgba(255,255,255,0.3);
+
+      background: transparent;
+      color: white;
+    }
+
+    .index-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 0 50px;
+    }
+
+    .index-list a {
+      display: grid;
+      grid-template-columns: 55px 1fr;
+
+      padding: 18px 0;
+
+      border-top: 1px solid rgba(255,255,255,0.2);
+
+      font-family: var(--serif);
+      font-size: clamp(25px, 4vw, 50px);
+      line-height: 1;
+    }
+
+    .index-list b {
+      color: #b5a179;
+
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    /* =========================================================
+       MOTION
+    ========================================================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+
+      transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* =========================================================
+       RTL
+    ========================================================= */
+
+    [dir="rtl"] .nav-links {
+      margin-left: 0;
+      margin-right: auto;
+    }
+
+    [dir="rtl"] .section-heading {
+      grid-template-columns: 1fr 90px;
+    }
+
+    [dir="rtl"] .section-number {
+      order: 2;
+    }
+
+    [dir="rtl"] .gantt-scroll,
+    [dir="rtl"] .terrain-scroll {
+      direction: ltr;
+    }
+
+    [dir="rtl"] .boq-price {
+      text-align: left;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 1050px) {
+      .nav-links {
+        display: none;
+      }
+
+      .facts,
+      .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .two-col,
+      .site-layout,
+      .material-block,
+      .cost-primary,
+      .cost-copy {
+        grid-template-columns: 1fr;
+      }
+
+      .material-block:nth-child(even) .material-visual {
+        order: 0;
+      }
+
+      .interfaces,
+      .decision-grid,
+      .drivers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .allowances {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .index-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      :root {
+        --pad: 20px;
+      }
+
+      .nav {
+        height: 60px;
+      }
+
+      .brand {
+        font-size: 10px;
+      }
+
+      #indexOpen {
+        font-size: 0;
+      }
+
+      #indexOpen::after {
+        content: "☰";
+        font-size: 18px;
+      }
+
+      .hero-kicker {
+        margin-bottom: 24vh;
+      }
+
+      .hero h1 {
+        font-size: clamp(62px, 18vw, 94px);
+      }
+
+      .hero-meta {
+        grid-template-columns: 1fr;
+      }
+
+      .fact {
+        min-height: 115px;
+        padding: 18px 15px;
+      }
+
+      .section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+      }
+
+      .section-heading {
+        grid-template-columns: 1fr;
+        gap: 9px;
+      }
+
+      [dir="rtl"] .section-heading {
+        grid-template-columns: 1fr;
+      }
+
+      [dir="rtl"] .section-number {
+        order: 0;
+      }
+
+      .story-rail,
+      .interfaces,
+      .decision-grid,
+      .drivers,
+      .allowances,
+      .risk-grid,
+      .kpis,
+      .scenarios {
+        grid-template-columns: 1fr;
+      }
+
+      .annotations {
+        grid-template-columns: 1fr;
+      }
+
+      .quantity-copy {
+        display: block;
+      }
+
+      .cost-range {
+        font-size: 17vw;
+      }
+
+      footer {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================================================
+       REDUCED MOTION
+    ========================================================= */
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* =========================================================
+       PRINT
+    ========================================================= */
+
+    @media print {
+      .nav,
+      .study-index,
+      .procurement-buttons,
+      .programme-note {
+        display: none !important;
+      }
+
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+
+      body {
+        background: white;
+        color: black;
+      }
+
+      .section,
+      .section.soft,
+      .section.dark {
+        background: white !important;
+        color: black !important;
+      }
+
+      .hero {
+        min-height: 65vh;
+        break-after: page;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+
+      .terrain-scroll,
+      .gantt-scroll {
+        overflow: visible;
+      }
+
+      .terrain-scroll img {
+        min-width: 0;
+      }
+
+      .gantt {
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =======================================================
+       NAV
+  ======================================================== -->
+
+  <nav class="nav" aria-label="Primary navigation">
+
+    <a class="brand" href="#top">
+      VILLA CONGRE Nº3
+    </a>
+
+    <div class="nav-links">
+
+      <a href="#overview" data-i18n="navOverview">
+        Overview
+      </a>
+
+      <a href="#site" data-i18n="navSite">
+        Site
+      </a>
+
+      <a href="#construction" data-i18n="navConstruction">
+        Construction
+      </a>
+
+      <a href="#materials" data-i18n="navMaterials">
+        Materials
+      </a>
+
+      <a href="#cost" data-i18n="navCost">
+        Cost
+      </a>
+
+      <a href="#programme" data-i18n="navDelivery">
+        Delivery
+      </a>
+
+    </div>
+
+    <div class="nav-actions">
+
+      <select id="language" aria-label="Language">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+        <option value="fr">FR</option>
+        <option value="it">IT</option>
+        <option value="de">DE</option>
+        <option value="ar">AR</option>
+      </select>
+
+      <button id="indexOpen" type="button" data-i18n="studyIndex">
+        Study Index
+      </button>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =======================================================
+       HERO
+  ======================================================== -->
+
+  <main id="top">
+
+    <section class="hero">
+
+      <!--
+        Replace this src with your verified Cloudinary
+        pool-facade-day URL from the existing project registry.
+      -->
+
+      <img
+        id="heroRender"
+        class="hero-image"
+        alt="Architectural visualization of Villa Congre Nº3"
+        fetchpriority="high"
+        hidden
+      />
+
+      <div class="hero-content">
+
+        <p class="eyebrow hero-kicker" data-i18n="study">
+          Construction Feasibility & Delivery Study
+        </p>
+
+        <h1>
+          Villa<br />
+          Congre Nº3
+        </h1>
+
+        <div class="hero-meta">
+
+          <p data-i18n="location">
+            Cala Llamp · Andratx · Mallorca · Spain
+          </p>
+
+          <a href="#overview" class="eyebrow" data-i18n="explore">
+            Explore the study
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FACTS
+    ====================================================== -->
+
+    <section class="facts">
+
+      <article class="fact">
+
+        <strong>
+          €2.10–2.30M
+        </strong>
+
+        <small>
+          <span data-i18n="workingEstimate">
+            Working estimate
+          </span>
+          ·
+          <span data-i18n="vatExcluded">
+            VAT not included
+          </span>
+        </small>
+
+      </article>
+
+
+      <article class="fact">
+
+        <strong>
+          1,022 m²
+        </strong>
+
+        <small data-i18n="plot">
+          Plot
+        </small>
+
+      </article>
+
+
+      <article class="fact">
+
+        <strong>
+          ≈24
+        </strong>
+
+        <small>
+          <span data-i18n="months">
+            months
+          </span>
+          ·
+          <span data-i18n="workingBaseline">
+            working baseline
+          </span>
+        </small>
+
+      </article>
+
+
+      <article class="fact">
+
+        <strong>
+          6–10
+        </strong>
+
+        <small>
+          <span data-i18n="weeks">
+            weeks
+          </span>
+          ·
+          <span data-i18n="preconstruction">
+            preconstruction
+          </span>
+        </small>
+
+      </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         01 OVERVIEW
+    ====================================================== -->
+
+    <section class="section reveal" id="overview">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          01
+        </span>
+
+        <h2 data-i18n="overview">
+          Executive Construction Summary
+        </h2>
+
+      </header>
+
+
+      <div class="two-col">
+
+        <div>
+
+          <p class="eyebrow">
+            VILLA CONGRE Nº3 · CARRER CONGRE Nº3
+          </p>
+
+          <p class="lede" data-i18n="overviewText">
+            A high-spec contemporary villa on a steep Mediterranean
+            residential hillside requiring coordinated groundworks,
+            retaining, structure, waterproofing, large glazing,
+            specialist systems and premium finishes.
+          </p>
+
+        </div>
+
+
+        <div class="material-placeholder alt">
+
+          <span>
+            Architectural visualization ·
+            whole-project context
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="summary-grid">
+
+        <article>
+          <strong>1,022 m²</strong>
+          <span data-i18n="plotArea">
+            Plot area
+          </span>
+        </article>
+
+        <article>
+          <strong>€2.10–2.30M</strong>
+          <span data-i18n="workingEstimateVat">
+            Working estimate · excl. VAT
+          </span>
+        </article>
+
+        <article>
+          <strong>≈€2.20M</strong>
+          <span data-i18n="workingTargetVat">
+            Current working target · excl. VAT
+          </span>
+        </article>
+
+        <article>
+          <strong>€750,400</strong>
+          <span data-i18n="historicPem">
+            Historical reference PEM
+          </span>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         02 SCOPE
+    ====================================================== -->
+
+    <section class="section soft reveal" id="scope">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          02
+        </span>
+
+        <h2 data-i18n="scope">
+          Objective & Scope
+        </h2>
+
+      </header>
+
+
+      <div class="two-col">
+
+        <div>
+
+          <p class="lede" data-i18n="scopeText">
+            The study reconciles documentary scope, quantities,
+            existing conditions, client revisions, procurement
+            decisions and a realistic delivery sequence before
+            remaining works are priced and committed.
+          </p>
+
+
+          <div class="flow">
+
+            <span>VERIFY</span>
+            <span>DEFINE</span>
+            <span>MEASURE</span>
+            <span>PRICE</span>
+            <span>APPROVE</span>
+            <span>PROCURE</span>
+            <span>BUILD</span>
+            <span>INSPECT</span>
+            <span>COMMISSION</span>
+            <span>HANDOVER</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="material-placeholder dark">
+
+          <span>
+            Site access · retaining ·
+            construction logistics
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         03 SITE
+    ====================================================== -->
+
+    <section class="section reveal" id="site">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          03
+        </span>
+
+        <h2 data-i18n="siteHeading">
+          Current Status & Executed Works
+        </h2>
+
+      </header>
+
+
+      <div class="site-layout">
+
+        <figure>
+
+          <img
+            class="site-photo"
+            src="https://res.cloudinary.com/dqje367sj/image/upload/f_auto,q_auto,c_limit,w_1600/v1789242349/960DFF8B-C46D-4F2A-94D3-9D2D5394D416_2_xmdcri.png"
+            alt="Current condition of the sloping Villa Congre Nº3 site viewed from Carrer Congre"
+          />
+
+          <figcaption class="caption">
+
+            <span data-i18n="realSite">
+              Real site photograph
+            </span>
+
+            <span data-i18n="currentCondition">
+              Current site condition
+            </span>
+
+          </figcaption>
+
+
+          <div class="annotations">
+
+            <span>
+              Street access
+            </span>
+
+            <span>
+              Existing excavation
+            </span>
+
+            <span>
+              Exposed rock
+            </span>
+
+            <span>
+              Rising topography
+            </span>
+
+            <span>
+              Visible retaining / structural elements
+            </span>
+
+            <span>
+              Natural hillside context
+            </span>
+
+          </div>
+
+        </figure>
+
+
+        <div>
+
+          <p class="eyebrow" data-i18n="currentCondition">
+            Current site condition
+          </p>
+
+          <p class="lede" data-i18n="siteDisclaimer">
+            The photograph records the visible site condition.
+            It is not a survey and does not verify which
+            documented positions are physically complete.
+          </p>
+
+          <br />
+
+          <span class="evidence" data-i18n="verifySite">
+            To verify on site
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <figure class="terrain">
+
+        <div
+          class="terrain-scroll"
+          tabindex="0"
+          role="region"
+          aria-label="Indicative terrain study"
+        >
+
+          <img
+            src="https://res.cloudinary.com/dqje367sj/image/upload/f_auto,q_90,c_limit,w_1600/v1789242534/86D5A640-92F4-46F9-981B-FA43530315A4_3_i75mnp.png"
+            alt="Indicative technical section illustrating the terrain relationship of Villa Congre Nº3"
+          />
+
+        </div>
+
+        <figcaption class="caption">
+
+          <span data-i18n="indicativeDiagram">
+            Indicative technical diagram
+          </span>
+
+          <span data-i18n="terrainStudy">
+            Indicative terrain study
+          </span>
+
+        </figcaption>
+
+      </figure>
+
+
+      <p class="muted" data-i18n="terrainDisclaimer">
+        Conceptual site section based on available project and
+        site information. Final levels remain subject to
+        coordinated survey and architectural / structural
+        documentation.
+      </p>
+
+
+      <div class="story-rail">
+
+        <div>
+          <b>01</b>
+          <span data-i18n="currentSite">
+            Current site
+          </span>
+        </div>
+
+        <div>
+          <b>02</b>
+          <span data-i18n="terrainLogic">
+            Terrain logic
+          </span>
+        </div>
+
+        <div>
+          <b>03</b>
+          <span data-i18n="documentStatus">
+            Document-reported status
+          </span>
+        </div>
+
+        <div>
+          <b>04</b>
+          <span data-i18n="physicalVerification">
+            Physical verification
+          </span>
+        </div>
+
+        <div>
+          <b>05</b>
+          <span data-i18n="architecturalVision">
+            Architectural vision
+          </span>
+        </div>
+
+      </div>
+
+
+      <div class="two-col" style="margin-top:70px">
+
+        <div>
+
+          <p class="eyebrow">
+            DOCUMENT-REPORTED EXECUTED
+          </p>
+
+          <h3
+            class="display"
+            style="font-size:clamp(38px,4vw,58px)"
+          >
+            Executed / excluded from new pricing
+          </h3>
+
+
+          <div class="executed-codes">
+
+            <span>1.1</span>
+            <span>1.2</span>
+            <span>1.3</span>
+            <span>1.4</span>
+
+            <span>2.1</span>
+            <span>2.2</span>
+            <span>2.3</span>
+            <span>2.12</span>
+
+          </div>
+
+
+          <p class="muted">
+            Supplementary documentation instructs these
+            positions to be entered at Quantity 0.00,
+            with no unit price and no total price.
+            Documentary status does not substitute
+            physical verification.
+          </p>
+
+        </div>
+
+
+        <div class="material-placeholder">
+
+          <span>
+            Architectural vision · hillside integration
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         04 CONSTRUCTION
+    ====================================================== -->
+
+    <section class="section reveal" id="construction">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          04
+        </span>
+
+        <h2 data-i18n="construction">
+          Remaining Construction Scope
+        </h2>
+
+      </header>
+
+
+      <p class="lede" data-i18n="constructionText">
+        Documented quantities provide a technical reference,
+        not a verified remaining-work measurement.
+        Existing execution must be reconciled before pricing.
+      </p>
+
+
+      <div
+        id="quantities"
+        class="quantity-list"
+      ></div>
+
+    </section>
+
+
+    <!-- =====================================================
+         05 STRATEGY
+    ====================================================== -->
+
+    <section class="section soft reveal" id="strategy">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          05
+        </span>
+
+        <h2 data-i18n="strategy">
+          Technical Construction Strategy
+        </h2>
+
+      </header>
+
+
+      <p class="lede" data-i18n="strategyText">
+        Resolve technical interfaces before closing each
+        construction phase.
+      </p>
+
+
+      <p class="eyebrow" style="margin-top:50px">
+        WORKING DELIVERY LOGIC
+      </p>
+
+
+      <div class="critical-path">
+
+        <span>Groundworks</span>
+        <b class="arrow">→</b>
+
+        <span>Retaining</span>
+        <b class="arrow">→</b>
+
+        <span>Foundations</span>
+        <b class="arrow">→</b>
+
+        <span>Structure</span>
+        <b class="arrow">→</b>
+
+        <span>Waterproofing</span>
+        <b class="arrow">→</b>
+
+        <span>Glazing</span>
+        <b class="arrow">→</b>
+
+        <span>MEP</span>
+        <b class="arrow">→</b>
+
+        <span>Finishes</span>
+        <b class="arrow">→</b>
+
+        <span>Commissioning</span>
+
+      </div>
+
+
+      <div class="interfaces">
+
+        <div>
+          Retaining ↔ Waterproofing
+        </div>
+
+        <div>
+          Structure ↔ Glazing
+        </div>
+
+        <div>
+          Roof ↔ Drainage
+        </div>
+
+        <div>
+          MEP ↔ Ceilings
+        </div>
+
+        <div>
+          UFH ↔ Floor finish
+        </div>
+
+        <div>
+          Stone ↔ Pool
+        </div>
+
+        <div>
+          Joinery ↔ MEP
+        </div>
+
+        <div>
+          Landscape ↔ Drainage
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         06 MATERIALS
+    ====================================================== -->
+
+    <section class="section reveal" id="materials">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          06
+        </span>
+
+        <h2 data-i18n="materials">
+          Materials & Design Revisions
+        </h2>
+
+      </header>
+
+
+      <div class="material-block">
+
+        <div class="material-visual material-placeholder alt">
+          <span>
+            Natural stone · terraces · Iroko · glazing
+          </span>
+        </div>
+
+        <div>
+
+          <p class="eyebrow">
+            NATURAL STONE · DECISION REQUIRED
+          </p>
+
+          <h3
+            class="display"
+            style="font-size:clamp(40px,5vw,64px)"
+          >
+            Crema Marfil Select
+            <br />
+            or Caliza Marbella
+          </h3>
+
+
+          <div class="spec">
+
+            <div class="spec-row">
+              <strong>Exterior thickness</strong>
+              <span>30 mm · natural / raw</span>
+            </div>
+
+            <div class="spec-row">
+              <strong>Ground-floor interior</strong>
+              <span>20 mm</span>
+            </div>
+
+            <div class="spec-row">
+              <strong>Caliza Marbella format</strong>
+              <span>100 × 100 cm nominal</span>
+            </div>
+
+            <div class="spec-row">
+              <strong>Selection</strong>
+              <span>Not yet selected</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="material-block">
+
+        <div class="material-visual material-placeholder dark">
+          <span>
+            Upper-floor parquet · bedroom context
+          </span>
+        </div>
+
+        <div>
+
+          <p class="eyebrow">
+            FLOORING · REVISED
+          </p>
+
+          <h3
+            class="display"
+            style="font-size:clamp(40px,5vw,64px)"
+          >
+            Ground floor stone.
+            <br />
+            Upper floor parquet.
+          </h3>
+
+          <p class="muted">
+            Fitted textile flooring is removed from
+            construction scope. Loose rugs remain furnishing,
+            not construction.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="material-block">
+
+        <div class="material-visual material-placeholder">
+          <span>
+            Carrara Bianca · bathrooms · one-piece stair
+          </span>
+        </div>
+
+        <div>
+
+          <p class="eyebrow">
+            MARBLE / INTERNAL STAIR
+          </p>
+
+          <h3
+            class="display"
+            style="font-size:clamp(40px,5vw,64px)"
+          >
+            38 one-piece
+            <br />
+            natural-stone steps
+          </h3>
+
+          <p class="muted">
+            Same selected stone as ground floor / exterior
+            terrace. No joint across each tread.
+            Underside LED recess.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="decision-grid">
+
+        <article>
+
+          <span class="evidence">
+            CLIENT CLARIFICATION
+          </span>
+
+          <h3>
+            Pool stone · 220.01 m²
+          </h3>
+
+          <p>
+            Pool stairs and lounging area are already
+            included. Do not double count.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span class="evidence">
+            REMOVED
+          </span>
+
+          <h3>
+            Position 12.3
+          </h3>
+
+          <p>
+            Latest clarification:
+            340.61 m² → 0.00 m².
+            Preserve historical discrepancy context.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span class="evidence">
+            CLIENT CLARIFICATION
+          </span>
+
+          <h3>
+            Exterior timber
+          </h3>
+
+          <p>
+            Iroko. Complete fixing, substructure and
+            finish remain to be defined.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span class="evidence">
+            MATERIAL REFERENCE
+          </span>
+
+          <h3>
+            Shower tile
+          </h3>
+
+          <p>
+            €100/m² material reference only.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span class="evidence">
+            CLIENT CLARIFICATION
+          </span>
+
+          <h3>
+            Outdoor shower
+          </h3>
+
+          <p>
+            Piedra Sierra Elvira.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span class="evidence">
+            PRICE REQUIRED
+          </span>
+
+          <h3>
+            Integrated BBQ
+          </h3>
+
+          <p>
+            Light natural stone sides and top,
+            with Iroko fronts.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         07 COST
+    ====================================================== -->
+
+    <section class="section reveal" id="cost">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          07
+        </span>
+
+        <h2 data-i18n="cost">
+          Budget & Cost Transparency
+        </h2>
+
+      </header>
+
+
+      <p class="eyebrow" data-i18n="currentFeasibility">
+        CURRENT FEASIBILITY ANALYSIS
+      </p>
+
+
+      <div class="cost-primary">
+
+        <div>
+
+          <strong class="cost-range">
+            €2.10–2.30M
+          </strong>
+
+          <span class="eyebrow">
+            WORKING CONSTRUCTION ESTIMATE
+          </span>
+
+          <br />
+
+          <span class="eyebrow" data-i18n="vatExcluded">
+            VAT NOT INCLUDED
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <strong class="cost-target">
+            ≈ €2.20M
+          </strong>
+
+          <span class="eyebrow">
+            CURRENT WORKING TARGET
+          </span>
+
+          <br />
+
+          <span class="eyebrow" data-i18n="vatExcluded">
+            VAT NOT INCLUDED
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="cost-copy">
+
+        <p data-i18n="feasibilityText">
+          The current feasibility range reflects the project
+          in its present scope, specification and delivery
+          context. It remains subject to contractor pricing,
+          scope reconciliation, site verification, design
+          coordination and procurement decisions.
+        </p>
+
+
+        <p data-i18n="pemText">
+          The €750,400 Reference PEM is the historical technical
+          BOQ baseline contained in the source documentation.
+          It remains important for quantities, chapter structure
+          and comparison, but should not be read as the current
+          cost of delivering the villa.
+        </p>
+
+      </div>
+
+
+      <div class="cost-warning" data-i18n="formulaText">
+        The working range is an analysis of the project as a
+        whole. It is not the Reference PEM plus the client
+        allowances, and it is not derived by applying an uplift
+        to the historical total.
+      </div>
+
+
+      <div class="drivers">
+
+        <span>
+          Steep hillside / site logistics
+        </span>
+
+        <span>
+          Rock excavation & retaining
+        </span>
+
+        <span>
+          Structural complexity
+        </span>
+
+        <span>
+          Waterproofing & drainage
+        </span>
+
+        <span>
+          Large-format glazing
+        </span>
+
+        <span>
+          Natural stone scope
+        </span>
+
+        <span>
+          Bespoke joinery
+        </span>
+
+        <span>
+          HVAC / UFH / controls
+        </span>
+
+        <span>
+          Pool & external works
+        </span>
+
+        <span>
+          Specialist equipment
+        </span>
+
+        <span>
+          Premium finishes
+        </span>
+
+        <span>
+          Pricing / coordination uncertainty
+        </span>
+
+      </div>
+
+
+      <div class="pem">
+
+        <p class="eyebrow">
+          HISTORICAL DOCUMENT BASIS
+        </p>
+
+        <strong>
+          €750,400.00
+        </strong>
+
+        <span class="eyebrow">
+          REFERENCE PEM · HISTORICAL BOQ
+        </span>
+
+      </div>
+
+
+      <h3
+        class="display"
+        style="font-size:clamp(36px,4vw,54px);margin:65px 0 25px"
+      >
+        Client allowances
+      </h3>
+
+
+      <div class="allowances">
+
+        <div class="allowance">
+          <strong>€25,000</strong>
+          <span>Kitchen</span>
+        </div>
+
+        <div class="allowance">
+          <strong>€10,000</strong>
+          <span>Laundry</span>
+        </div>
+
+        <div class="allowance">
+          <strong>€8,000</strong>
+          <span>Wine cellar</span>
+        </div>
+
+        <div class="allowance">
+          <strong>max €10,000</strong>
+          <span>Bar</span>
+        </div>
+
+        <div class="allowance">
+          <strong>€30,000</strong>
+          <span>Landscaping</span>
+        </div>
+
+      </div>
+
+
+      <div class="boq">
+
+        <p class="eyebrow">
+          HISTORICAL BOQ CHAPTER STRUCTURE
+        </p>
+
+        <div id="boqRows"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         08 PROCUREMENT
+    ====================================================== -->
+
+    <section class="section soft reveal" id="procurement">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          08
+        </span>
+
+        <h2 data-i18n="procurement">
+          Construction Packages & Procurement
+        </h2>
+
+      </header>
+
+
+      <p class="lede">
+        Long-lead and design-dependent packages should be
+        technically defined and priced early enough to protect
+        the working programme.
+      </p>
+
+
+      <div class="procurement-grid">
+
+        <article class="procurement-card">
+          <span class="evidence">PLANNING</span>
+          <h3>Lift</h3>
+          <p>
+            Schindler 3000 · 630 kg · up to 8 persons ·
+            mirror interior.
+          </p>
+        </article>
+
+
+        <article class="procurement-card">
+          <span class="evidence">DESIGN REQUIRED</span>
+          <h3>Large-format glazing</h3>
+          <p>
+            Cortizo COR Vision / COR Vision Plus / COR70
+            documented system references.
+          </p>
+        </article>
+
+
+        <article class="procurement-card">
+          <span class="evidence">DECISION REQUIRED</span>
+          <h3>Natural stone</h3>
+          <p>
+            Crema Marfil Select or Caliza Marbella.
+          </p>
+        </article>
+
+
+        <article class="procurement-card">
+          <span class="evidence">ENGINEERING VERIFICATION</span>
+          <h3>HVAC</h3>
+          <p>
+            Mitsubishi Electric CITY MULTI YXM R32 /
+            Vaillant aroTHERM Plus references.
+          </p>
+        </article>
+
+
+        <article class="procurement-card">
+          <span class="evidence">PLANNING</span>
+          <h3>KNX / controls</h3>
+          <p>
+            Coordinate lighting, HVAC, fireplace,
+            shading and specialist systems.
+          </p>
+        </article>
+
+
+        <article class="procurement-card">
+          <span class="evidence">CLIENT ALLOWANCE</span>
+          <h3>Kitchen</h3>
+          <p>
+            €25,000 complete allowance.
+          </p>
+        </article>
+
+
+        <article class="procurement-card">
+          <span class="evidence">PRICING</span>
+          <h3>Bespoke joinery</h3>
+          <p>
+            Coordinate dimensions, interfaces and installation.
+          </p>
+        </article>
+
+
+        <article class="procurement-card">
+          <span class="evidence">MODEL REQUIRED</span>
+          <h3>Sauna</h3>
+          <p>
+            KLAFS · model to suit architectural dimensions.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         09 PROGRAMME
+    ====================================================== -->
+
+    <section class="section dark reveal" id="programme">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          09
+        </span>
+
+        <h2 data-i18n="programme">
+          Construction Programme
+        </h2>
+
+      </header>
+
+
+      <div class="programme-meta">
+
+        <div>
+
+          <p class="eyebrow">
+            WORKING BASELINE
+          </p>
+
+          <div class="programme-number">
+            24
+          </div>
+
+          <span data-i18n="months">
+            months
+          </span>
+
+        </div>
+
+
+        <div>
+
+          <p class="eyebrow">
+            PRECONSTRUCTION
+          </p>
+
+          <h3
+            class="display"
+            style="font-size:50px"
+          >
+            6–10 weeks
+          </h3>
+
+          <p class="muted">
+            Verification, setup, coordination and procurement
+            preparation before the construction baseline.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <p class="eyebrow">
+        PROCUREMENT OVERLAY ·
+        PLANNING / TO BE CONFIRMED
+      </p>
+
+
+      <div
+        id="procurementButtons"
+        class="procurement-buttons"
+      ></div>
+
+
+      <div
+        id="programmeNote"
+        class="programme-note"
+      >
+        Select a procurement package to highlight its working
+        planning window and related construction phase.
+      </div>
+
+
+      <div
+        class="gantt-scroll"
+        tabindex="0"
+        role="region"
+        aria-label="24-month working construction programme"
+      >
+
+        <div class="gantt">
+
+          <div class="months-row">
+
+            <div></div>
+
+            <div
+              id="monthHeader"
+              class="months"
+            ></div>
+
+          </div>
+
+          <div id="ganttRows"></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="scenarios">
+
+        <article class="scenario">
+          <span class="eyebrow">
+            OPTIMISED
+          </span>
+          <strong>
+            19–21
+          </strong>
+          <small>
+            months · planning scenario
+          </small>
+        </article>
+
+
+        <article class="scenario">
+          <span class="eyebrow">
+            BASELINE
+          </span>
+          <strong>
+            22–24
+          </strong>
+          <small>
+            months · planning scenario
+          </small>
+        </article>
+
+
+        <article class="scenario">
+          <span class="eyebrow">
+            CONSERVATIVE
+          </span>
+          <strong>
+            24–28
+          </strong>
+          <small>
+            months · planning scenario
+          </small>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         10 RISK
+    ====================================================== -->
+
+    <section class="section reveal" id="risk">
+
+      <header class="section-heading">
+
+        <span class="section-number">
+          10
+        </span>
+
+        <h2 data-i18n="risk">
+          Risk, Control & Next Steps
+        </h2>
+
+      </header>
+
+
+      <div class="risk-grid">
+
+        <article>
+          <h3>Existing work status</h3>
+          <p>
+            Reconcile documentary status against the physical
+            site before remaining-scope pricing.
+          </p>
+        </article>
+
+        <article>
+          <h3>Rock / retaining</h3>
+          <p>
+            Confirm remaining groundworks, anchors,
+            retaining sequence and logistics.
+          </p>
+        </article>
+
+        <article>
+          <h3>Waterproofing interfaces</h3>
+          <p>
+            Inspect substrates, penetrations and drainage
+            before covering.
+          </p>
+        </article>
+
+        <article>
+          <h3>Large-format glazing</h3>
+          <p>
+            Freeze openings, thresholds, waterproofing and
+            drainage before production.
+          </p>
+        </article>
+
+        <article>
+          <h3>Natural stone</h3>
+          <p>
+            Resolve stone option, thickness, finish and
+            fabrication details early.
+          </p>
+        </article>
+
+        <article>
+          <h3>MEP coordination</h3>
+          <p>
+            Coordinate HVAC, UFH, KNX, lighting,
+            ceilings and specialist systems.
+          </p>
+        </article>
+
+        <article>
+          <h3>Client changes</h3>
+          <p>
+            Control quantity, cost and programme impacts
+            before construction release.
+          </p>
+        </article>
+
+        <article>
+          <h3>Bespoke / specialist packages</h3>
+          <p>
+            Secure dimensions, models, prices and access
+            within the procurement plan.
+          </p>
+        </article>
+
+      </div>
+
+
+      <p
+        class="eyebrow"
+        style="margin-top:60px"
+      >
+        PROJECT CONTROL
+      </p>
+
+
+      <div class="flow">
+
+        <span>VERIFY</span>
+        <span>DEFINE</span>
+        <span>MEASURE</span>
+        <span>PRICE</span>
+        <span>APPROVE</span>
+        <span>PROCURE</span>
+        <span>BUILD</span>
+        <span>INSPECT</span>
+        <span>COMMISSION</span>
+        <span>HANDOVER</span>
+
+      </div>
+
+
+      <h3
+        class="display"
+        style="font-size:clamp(36px,4vw,54px);margin-top:60px"
+      >
+        Recommended KPIs
+      </h3>
+
+
+      <p class="muted">
+        Categories only. No fabricated live project values.
+      </p>
+
+
+      <div class="kpis">
+
+        <div class="kpi">
+          Physical progress %
+        </div>
+
+        <div class="kpi">
+          Committed cost
+        </div>
+
+        <div class="kpi">
+          Forecast final cost
+        </div>
+
+        <div class="kpi">
+          Approved variations
+        </div>
+
+        <div class="kpi">
+          Open RFIs
+        </div>
+
+        <div class="kpi">
+          Outstanding client decisions
+        </div>
+
+        <div class="kpi">
+          Long-lead items at risk
+        </div>
+
+        <div class="kpi">
+          Programme variance
+        </div>
+
+        <div class="kpi">
+          Quality non-conformities
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONCLUSION
+    ====================================================== -->
+
+    <section class="conclusion">
+
+      <div class="conclusion-content">
+
+        <p class="eyebrow">
+          VILLA CONGRE Nº3
+          ·
+          CONSTRUCTION FEASIBILITY & DELIVERY STUDY
+        </p>
+
+        <h2 data-i18n="conclusion">
+          Construction feasibility depends on resolving
+          interfaces before committing cost and programme.
+        </h2>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+
+  <footer>
+
+    <div>
+
+      <strong>
+        VILLA CONGRE Nº3
+      </strong>
+
+      <br />
+
+      Carrer Congre Nº3
+      ·
+      Cala Llamp
+      ·
+      Andratx
+      ·
+      Mallorca
+
+    </div>
+
+    <div>
+
+      This feasibility dossier distinguishes historical
+      source values, current working assumptions,
+      client allowances and items requiring verification.
+      It is not a contractor quotation or construction contract.
+
+    </div>
+
+  </footer>
+
+
+  <!-- =======================================================
+       STUDY INDEX
+  ======================================================== -->
+
+  <div
+    id="studyIndex"
+    class="study-index"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="studyIndexTitle"
+  >
+
+    <div class="study-index-header">
+
+      <strong
+        id="studyIndexTitle"
+        data-i18n="studyIndex"
+      >
+        Study Index
+      </strong>
+
+      <button
+        id="indexClose"
+        type="button"
+        aria-label="Close study index"
+      >
+        ✕
+      </button>
+
+    </div>
+
+
+    <div class="index-list">
+
+      <a href="#overview">
+        <b>01</b>
+        <span data-i18n="overview">
+          Executive Construction Summary
+        </span>
+      </a>
+
+      <a href="#scope">
+        <b>02</b>
+        <span data-i18n="scope">
+          Objective & Scope
+        </span>
+      </a>
+
+      <a href="#site">
+        <b>03</b>
+        <span data-i18n="siteHeading">
+          Current Status & Executed Works
+        </span>
+      </a>
+
+      <a href="#construction">
+        <b>04</b>
+        <span data-i18n="construction">
+          Remaining Construction Scope
+        </span>
+      </a>
+
+      <a href="#strategy">
+        <b>05</b>
+        <span data-i18n="strategy">
+          Technical Construction Strategy
+        </span>
+      </a>
+
+      <a href="#materials">
+        <b>06</b>
+        <span data-i18n="materials">
+          Materials & Design Revisions
+        </span>
+      </a>
+
+      <a href="#cost">
+        <b>07</b>
+        <span data-i18n="cost">
+          Budget & Cost Transparency
+        </span>
+      </a>
+
+      <a href="#procurement">
+        <b>08</b>
+        <span data-i18n="procurement">
+          Construction Packages & Procurement
+        </span>
+      </a>
+
+      <a href="#programme">
+        <b>09</b>
+        <span data-i18n="programme">
+          Construction Programme
+        </span>
+      </a>
+
+      <a href="#risk">
+        <b>10</b>
+        <span data-i18n="risk">
+          Risk, Control & Next Steps
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <script>
+    /* =========================================================
+       ARCHITECTURAL ASSET REGISTRY
+
+       Paste your verified Cloudinary URLs from the existing
+       Villa Congre project here.
+
+       Leave an entry empty if you do not want that render used.
+    ========================================================= */
+
+    const ASSETS = {
+
+      hero:
+        "",
+
+      overview:
+        "",
+
+      access:
+        "",
+
+      architecturalVision:
+        "",
+
+      garage:
+        "",
+
+      materialLiving:
+        "",
+
+      materialStone:
+        "",
+
+      bedroom:
+        "",
+
+      bathroom:
+        "",
+
+      glazing:
+        "",
+
+      kitchen:
+        "",
+
+      wine:
+        "",
+
+      sauna:
+        "",
+
+      joinery:
+        "",
+
+      conclusion:
+        ""
+
+    };
+
+
+    function applyAssets() {
+
+      const hero =
+        document.getElementById("heroRender");
+
+      if (ASSETS.hero) {
+
+        hero.src =
+          ASSETS.hero;
+
+        hero.hidden =
+          false;
+
+      }
+
+    }
+
+
+    applyAssets();
+
+
+    /* =========================================================
+       DATA
+    ========================================================= */
+
+    const quantities = [
+
+      [
+        "Rock excavation",
+        "3,536.02",
+        "m³",
+        "DOCUMENT-REPORTED / BOQ"
+      ],
+
+      [
+        "Excavated-material transport",
+        "5,068.95",
+        "m³",
+        "DOCUMENT-REPORTED / BOQ"
+      ],
+
+      [
+        "Trench excavation",
+        "84.66",
+        "m³",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Retaining-wall gravel backfill",
+        "836.54",
+        "m³",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Trench gravel backfill",
+        "43.20",
+        "m³",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Granular base",
+        "132.14",
+        "m³",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Selected excavated-material fill",
+        "10.00",
+        "m³",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Crushed aggregate fill",
+        "211.00",
+        "m³",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Topsoil",
+        "211.00",
+        "m³",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Sand fill",
+        "20.00",
+        "m³",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Permanent ground anchors",
+        "186",
+        "m",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "30 cm reinforced-concrete slab",
+        "503.50",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Walkable roof / terrace",
+        "209.25",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Wall waterproofing",
+        "964.01",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Associated wall drainage",
+        "964.01",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Drainage tube",
+        "261.48",
+        "m",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Pool / wet-area waterproofing",
+        "231.28",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Other waterproofing",
+        "487.81",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Ceiling insulation",
+        "280.86",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Foundation PVC membrane",
+        "≈211",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Plasterboard partitions",
+        "289.30",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Wall linings",
+        "588.21",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Internal ceilings",
+        "430.86",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Exterior Aquapanel ceilings",
+        "53.77",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Timber / walnut slatted ceiling",
+        "74.03",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Curtain pockets",
+        "175.87",
+        "m",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Mortar base",
+        "568.85",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Self-leveling above UFH",
+        "359.44",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Exterior reinforced concrete / ramp",
+        "165.01",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Garage epoxy",
+        "83.30",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "Polished concrete",
+        "75.69",
+        "m²",
+        "HISTORICAL BOQ"
+      ],
+
+      [
+        "External / pool natural stone",
+        "220.01",
+        "m²",
+        "CLIENT CLARIFICATION · NO DOUBLE COUNT"
+      ],
+
+      [
+        "Internal natural-stone steps",
+        "38",
+        "units",
+        "CLIENT CLARIFICATION"
+      ]
+
+    ];
+
+
+    const historicalBOQ = [
+
+      ["01", "Preliminary Works", 5537.51],
+
+      ["02", "Earthworks", 51978.05],
+
+      ["03", "Foundations", 82398.90],
+
+      ["04", "Reinforced Concrete Structures", 48119.56],
+
+      ["05", "Steel Structures", 6138.11],
+
+      ["06", "Roofs", 10023.26],
+
+      ["07", "Waterproofing & Insulation", 16697.78],
+
+      ["08", "Masonry", 23431.59],
+
+      ["09", "Continuous Finishes", 24504.52],
+
+      ["10", "Discontinuous Finishes", 67642.80],
+
+      ["11", "Miscellaneous Works", 18636.32],
+
+      ["12", "Timber Joinery", 74006.35],
+
+      ["13", "Aluminium Joinery", 31440.80],
+
+      ["14", "Glazing", 14196.26],
+
+      ["15", "Metalwork", 19617.63],
+
+      ["16", "Painting", 7084.86],
+
+      ["17", "Exterior Works", 3160.29],
+
+      ["18", "Landscaping", 8916.83],
+
+      ["19", "Equipment", 4511.92],
+
+      ["20", "Installations", 203757.29],
+
+      ["21", "Testing & Technical Control", 929.24],
+
+      ["22", "Health & Safety", 17833.67],
+
+      ["23", "Waste Management", 9836.46]
+
+    ];
+
+
+    const programme = [
+
+      [
+        "Site setup / remaining earthworks",
+        1,
+        3
+      ],
+
+      [
+        "Retaining / anchors / foundations",
+        2,
+        5
+      ],
+
+      [
+        "Main structure",
+        4,
+        9
+      ],
+
+      [
+        "Pool structure / roofs",
+        7,
+        10
+      ],
+
+      [
+        "Envelope / waterproofing",
+        8,
+        12
+      ],
+
+      [
+        "Glazing / weather-tight",
+        10,
+        13
+      ],
+
+      [
+        "MEP first fix",
+        10,
+        15
+      ],
+
+      [
+        "Partitions / ceilings",
+        12,
+        16
+      ],
+
+      [
+        "Stone / bathrooms / flooring",
+        15,
+        20
+      ],
+
+      [
+        "Joinery / fixed furniture",
+        17,
+        21
+      ],
+
+      [
+        "KNX / lighting / specialist systems",
+        19,
+        22
+      ],
+
+      [
+        "Pool / external works / landscape",
+        19,
+        23
+      ],
+
+      [
+        "Commissioning / snagging / handover",
+        23,
+        24
+      ]
+
+    ];
+
+
+    const procurement = [
+
+      {
+        id: "lift",
+        label: "Lift",
+        start: 2,
+        end: 4,
+        phase: 10
+      },
+
+      {
+        id: "glazing",
+        label: "Large-format glazing",
+        start: 4,
+        end: 6,
+        phase: 5
+      },
+
+      {
+        id: "stone",
+        label: "Natural stone",
+        start: 6,
+        end: 8,
+        phase: 8
+      },
+
+      {
+        id: "hvac",
+        label: "HVAC",
+        start: 7,
+        end: 9,
+        phase: 6
+      },
+
+      {
+        id: "knx",
+        label: "KNX / controls",
+        start: 8,
+        end: 10,
+        phase: 10
+      },
+
+      {
+        id: "kitchen",
+        label: "Kitchen",
+        start: 10,
+        end: 12,
+        phase: 9
+      },
+
+      {
+        id: "joinery",
+        label: "Bespoke joinery",
+        start: 10,
+        end: 13,
+        phase: 9
+      },
+
+      {
+        id: "sanitary",
+        label: "Sanitary",
+        start: 11,
+        end: 14,
+        phase: 8
+      },
+
+      {
+        id: "lighting",
+        label: "Decorative lighting",
+        start: 12,
+        end: 15,
+        phase: 10
+      },
+
+      {
+        id: "sauna",
+        label: "Sauna",
+        start: 12,
+        end: 15,
+        phase: 10
+      }
+
+    ];
+
+
+    /* =========================================================
+       QUANTITY RENDER
+    ========================================================= */
+
+    const quantityRoot =
+      document.getElementById("quantities");
+
+
+    quantityRoot.innerHTML =
+      quantities
+        .map(
+          ([name, value, unit, evidence]) => `
+            <div class="quantity-row">
+
+              <div class="quantity-copy">
+
+                <strong>
+                  ${name}
+                </strong>
+
+                <small>
+                  ${evidence}
+                </small>
+
+              </div>
+
+              <bdi class="quantity-value">
+                ${value} ${unit}
+              </bdi>
+
+            </div>
+          `
+        )
+        .join("");
+
+
+    /* =========================================================
+       BOQ RENDER
+    ========================================================= */
+
+    const boqRoot =
+      document.getElementById("boqRows");
+
+
+    const maxBOQ =
+      Math.max(
+        ...historicalBOQ.map(
+          item => item[2]
+        )
+      );
+
+
+    boqRoot.innerHTML =
+      historicalBOQ
+        .map(
+          ([number, name, value]) => {
+
+            const width =
+              value / maxBOQ * 100;
+
+            return `
+              <div class="boq-row">
+
+                <span>
+                  ${number}
+                </span>
+
+                <div class="boq-label">
+
+                  <strong>
+                    ${name}
+                  </strong>
+
+                  <span
+                    class="boq-bar"
+                    style="width:${width}%"
+                  ></span>
+
+                </div>
+
+                <bdi class="boq-price">
+                  €${value.toLocaleString(
+                    "en-US",
+                    {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2
+                    }
+                  )}
+                </bdi>
+
+              </div>
+            `;
+
+          }
+        )
+        .join("") +
+
+      `
+        <div class="boq-row">
+
+          <span>
+            Σ
+          </span>
+
+          <div>
+            <strong>
+              TOTAL REFERENCE PEM
+            </strong>
+          </div>
+
+          <bdi class="boq-price">
+            €750,400.00
+          </bdi>
+
+        </div>
+      `;
+
+
+    /* =========================================================
+       GANTT
+    ========================================================= */
+
+    document.getElementById("monthHeader").innerHTML =
+      Array.from(
+        { length: 24 },
+        (_, index) => `
+          <span>
+            ${index + 1}
+          </span>
+        `
+      )
+      .join("");
+
+
+    const ganttRows =
+      document.getElementById("ganttRows");
+
+
+    ganttRows.innerHTML =
+      programme
+        .map(
+          ([label, start, end], index) => {
+
+            const left =
+              (start - 1) / 24 * 100;
+
+            const width =
+              (end - start + 1) / 24 * 100;
+
+            return `
+              <div
+                class="gantt-row"
+                data-phase="${index}"
+              >
+
+                <div class="gantt-label">
+
+                  <strong>
+                    ${label}
+                  </strong>
+
+                  <small>
+                    M${start}–M${end}
+                  </small>
+
+                </div>
+
+
+                <div class="gantt-track">
+
+                  <span
+                    class="gantt-bar"
+                    style="
+                      left:${left}%;
+                      width:${width}%;
+                    "
+                  ></span>
+
+                </div>
+
+              </div>
+            `;
+
+          }
+        )
+        .join("");
+
+
+    /* =========================================================
+       PROCUREMENT BUTTONS
+    ========================================================= */
+
+    const procurementButtons =
+      document.getElementById(
+        "procurementButtons"
+      );
+
+
+    procurementButtons.innerHTML =
+      `
+        <button
+          type="button"
+          class="active"
+          data-procurement="all"
+        >
+          All packages
+        </button>
+      ` +
+
+      procurement
+        .map(
+          item => `
+            <button
+              type="button"
+              data-procurement="${item.id}"
+            >
+              ${item.label}
+            </button>
+          `
+        )
+        .join("");
+
+
+    const programmeNote =
+      document.getElementById(
+        "programmeNote"
+      );
+
+
+    procurementButtons
+      .querySelectorAll("button")
+      .forEach(button => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            procurementButtons
+              .querySelectorAll("button")
+              .forEach(
+                current =>
+                  current.classList.remove(
+                    "active"
+                  )
+              );
+
+
+            button.classList.add(
+              "active"
+            );
+
+
+            document
+              .querySelectorAll(
+                ".gantt-row"
+              )
+              .forEach(row => {
+
+                row.classList.remove(
+                  "highlight",
+                  "dimmed"
+                );
+
+              });
+
+
+            const selected =
+              button.dataset.procurement;
+
+
+            if (selected === "all") {
+
+              programmeNote.textContent =
+                "All construction phases shown. Procurement windows are working planning assumptions only.";
+
+              return;
+
+            }
+
+
+            const item =
+              procurement.find(
+                candidate =>
+                  candidate.id === selected
+              );
+
+
+            document
+              .querySelectorAll(
+                ".gantt-row"
+              )
+              .forEach(row => {
+
+                const phase =
+                  Number(
+                    row.dataset.phase
+                  );
+
+
+                row.classList.add(
+                  phase === item.phase
+                    ? "highlight"
+                    : "dimmed"
+                );
+
+              });
+
+
+            programmeNote.textContent =
+              `${item.label} · working procurement window M${item.start}–M${item.end} · related construction phase highlighted. This is a planning assumption, not a manufacturer lead time.`;
+
+          }
+        );
+
+      });
+
+
+    /* =========================================================
+       TRANSLATIONS
+    ========================================================= */
+
+    const translations = {
+
+      en: {
+
+        navOverview:
+          "Overview",
+
+        navSite:
+          "Site",
+
+        navConstruction:
+          "Construction",
+
+        navMaterials:
+          "Materials",
+
+        navCost:
+          "Cost",
+
+        navDelivery:
+          "Delivery",
+
+        studyIndex:
+          "Study Index",
+
+        study:
+          "Construction Feasibility & Delivery Study",
+
+        location:
+          "Cala Llamp · Andratx · Mallorca · Spain",
+
+        explore:
+          "Explore the study",
+
+        workingEstimate:
+          "Working estimate",
+
+        vatExcluded:
+          "VAT not included",
+
+        plot:
+          "Plot",
+
+        months:
+          "months",
+
+        weeks:
+          "weeks",
+
+        workingBaseline:
+          "Working baseline",
+
+        preconstruction:
+          "Preconstruction",
+
+        overview:
+          "Executive Construction Summary",
+
+        plotArea:
+          "Plot area",
+
+        workingEstimateVat:
+          "Working estimate · excl. VAT",
+
+        workingTargetVat:
+          "Current working target · excl. VAT",
+
+        historicPem:
+          "Historical reference PEM",
+
+        overviewText:
+          "A high-spec contemporary villa on a steep Mediterranean residential hillside requiring coordinated groundworks, retaining, structure, waterproofing, large glazing, specialist systems and premium finishes.",
+
+        scope:
+          "Objective & Scope",
+
+        scopeText:
+          "The study reconciles documentary scope, quantities, existing conditions, client revisions, procurement decisions and a realistic delivery sequence before remaining works are priced and committed.",
+
+        siteHeading:
+          "Current Status & Executed Works",
+
+        realSite:
+          "Real site photograph",
+
+        currentCondition:
+          "Current site condition",
+
+        siteDisclaimer:
+          "The photograph records the visible site condition. It is not a survey and does not verify which documented positions are physically complete.",
+
+        verifySite:
+          "To verify on site",
+
+        indicativeDiagram:
+          "Indicative technical diagram",
+
+        terrainStudy:
+          "Indicative terrain study",
+
+        terrainDisclaimer:
+          "Conceptual site section based on available project and site information. Final levels remain subject to coordinated survey and architectural / structural documentation.",
+
+        currentSite:
+          "Current site",
+
+        terrainLogic:
+          "Terrain logic",
+
+        documentStatus:
+          "Document-reported status",
+
+        physicalVerification:
+          "Physical verification",
+
+        architecturalVision:
+          "Architectural vision",
+
+        construction:
+          "Remaining Construction Scope",
+
+        constructionText:
+          "Documented quantities provide a technical reference, not a verified remaining-work measurement. Existing execution must be reconciled before pricing.",
+
+        strategy:
+          "Technical Construction Strategy",
+
+        strategyText:
+          "Resolve technical interfaces before closing each construction phase.",
+
+        materials:
+          "Materials & Design Revisions",
+
+        cost:
+          "Budget & Cost Transparency",
+
+        currentFeasibility:
+          "Current Feasibility Analysis",
+
+        feasibilityText:
+          "The current feasibility range reflects the project in its present scope, specification and delivery context. It remains subject to contractor pricing, scope reconciliation, site verification, design coordination and procurement decisions.",
+
+        pemText:
+          "The €750,400 Reference PEM is the historical technical BOQ baseline contained in the source documentation. It remains important for quantities, chapter structure and comparison, but should not be read as the current cost of delivering the villa.",
+
+        formulaText:
+          "The working range is an analysis of the project as a whole. It is not the Reference PEM plus the client allowances, and it is not derived by applying an uplift to the historical total.",
+
+        procurement:
+          "Construction Packages & Procurement",
+
+        programme:
+          "Construction Programme",
+
+        risk:
+          "Risk, Control & Next Steps",
+
+        conclusion:
+          "Construction feasibility depends on resolving interfaces before committing cost and programme."
+
+      },
+
+
+      es: {
+
+        navOverview:
+          "Resumen",
+
+        navSite:
+          "Solar",
+
+        navConstruction:
+          "Construcción",
+
+        navMaterials:
+          "Materiales",
+
+        navCost:
+          "Coste",
+
+        navDelivery:
+          "Entrega",
+
+        studyIndex:
+          "Índice del estudio",
+
+        study:
+          "Estudio de viabilidad y ejecución de obra",
+
+        location:
+          "Cala Llamp · Andratx · Mallorca · España",
+
+        explore:
+          "Explorar el estudio",
+
+        workingEstimate:
+          "Estimación de trabajo",
+
+        vatExcluded:
+          "IVA no incluido",
+
+        plot:
+          "Parcela",
+
+        months:
+          "meses",
+
+        weeks:
+          "semanas",
+
+        workingBaseline:
+          "Base de planificación",
+
+        preconstruction:
+          "Preconstrucción",
+
+        overview:
+          "Resumen ejecutivo de construcción",
+
+        plotArea:
+          "Superficie de parcela",
+
+        workingEstimateVat:
+          "Estimación de trabajo · sin IVA",
+
+        workingTargetVat:
+          "Objetivo de trabajo actual · sin IVA",
+
+        historicPem:
+          "PEM histórico de referencia",
+
+        overviewText:
+          "Villa contemporánea de alta especificación sobre una parcela mediterránea en pendiente, con una coordinación exigente de tierras, contención, estructura, impermeabilización, grandes acristalamientos, sistemas especializados y acabados premium.",
+
+        scope:
+          "Objetivo y alcance",
+
+        scopeText:
+          "El estudio concilia el alcance documental, las mediciones, el estado existente, las revisiones del cliente, las decisiones de compras y una secuencia realista de ejecución antes de valorar y comprometer los trabajos restantes.",
+
+        siteHeading:
+          "Estado actual y trabajos ejecutados",
+
+        realSite:
+          "Fotografía real del solar",
+
+        currentCondition:
+          "Estado actual del solar",
+
+        siteDisclaimer:
+          "La fotografía registra la condición visible del solar. No es un levantamiento y no verifica qué partidas documentadas están físicamente terminadas.",
+
+        verifySite:
+          "Verificar en obra",
+
+        indicativeDiagram:
+          "Diagrama técnico indicativo",
+
+        terrainStudy:
+          "Estudio indicativo del terreno",
+
+        terrainDisclaimer:
+          "Sección conceptual basada en la información disponible del proyecto y del solar. Las cotas finales quedan sujetas a levantamiento coordinado y documentación arquitectónica y estructural.",
+
+        currentSite:
+          "Solar actual",
+
+        terrainLogic:
+          "Lógica del terreno",
+
+        documentStatus:
+          "Estado según documentación",
+
+        physicalVerification:
+          "Verificación física",
+
+        architecturalVision:
+          "Visión arquitectónica",
+
+        construction:
+          "Alcance de construcción restante",
+
+        constructionText:
+          "Las mediciones documentadas son una referencia técnica, no una medición verificada de obra pendiente. El estado ejecutado debe conciliarse antes de valorar.",
+
+        strategy:
+          "Estrategia técnica de construcción",
+
+        strategyText:
+          "Resolver las interfaces técnicas antes del cierre de cada fase constructiva.",
+
+        materials:
+          "Materiales y revisiones de diseño",
+
+        cost:
+          "Presupuesto y transparencia de costes",
+
+        currentFeasibility:
+          "Análisis de viabilidad actual",
+
+        feasibilityText:
+          "El rango actual de viabilidad refleja el proyecto en su alcance, especificación y contexto de ejecución actuales. Sigue sujeto a precios de contratista, conciliación de alcance, verificación del solar, coordinación de diseño y decisiones de compras.",
+
+        pemText:
+          "El PEM de referencia de 750.400 € es la base técnica histórica del BOQ contenida en la documentación de origen. Sigue siendo importante para mediciones, estructura de capítulos y comparación, pero no debe interpretarse como el coste actual de ejecución de la villa.",
+
+        formulaText:
+          "El rango de trabajo es un análisis del proyecto en su conjunto. No es el PEM de referencia más las partidas provisionales del cliente ni se deriva aplicando un incremento al total histórico.",
+
+        procurement:
+          "Paquetes de construcción y compras",
+
+        programme:
+          "Programa de construcción",
+
+        risk:
+          "Riesgo, control y próximos pasos",
+
+        conclusion:
+          "La viabilidad de la construcción depende de resolver las interfaces antes de comprometer coste y programa."
+
+      },
+
+
+      fr: {
+
+        navOverview: "Synthèse",
+        navSite: "Site",
+        navConstruction: "Construction",
+        navMaterials: "Matériaux",
+        navCost: "Coût",
+        navDelivery: "Livraison",
+
+        studyIndex: "Index de l’étude",
+
+        study:
+          "Étude de faisabilité et de livraison",
+
+        location:
+          "Cala Llamp · Andratx · Majorque · Espagne",
+
+        explore:
+          "Explorer l’étude",
+
+        workingEstimate:
+          "Estimation de travail",
+
+        vatExcluded:
+          "TVA non incluse",
+
+        plot:
+          "Parcelle",
+
+        months:
+          "mois",
+
+        weeks:
+          "semaines",
+
+        workingBaseline:
+          "Base de planification",
+
+        preconstruction:
+          "Préconstruction",
+
+        overview:
+          "Synthèse exécutive de construction",
+
+        scope:
+          "Objectif et périmètre",
+
+        siteHeading:
+          "État actuel et travaux exécutés",
+
+        construction:
+          "Périmètre de construction restant",
+
+        strategy:
+          "Stratégie technique",
+
+        materials:
+          "Matériaux et révisions de conception",
+
+        cost:
+          "Budget et transparence des coûts",
+
+        procurement:
+          "Lots et approvisionnement",
+
+        programme:
+          "Programme de construction",
+
+        risk:
+          "Risques, contrôle et prochaines étapes",
+
+        conclusion:
+          "La faisabilité dépend de la résolution des interfaces avant l’engagement du coût et du programme."
+
+      },
+
+
+      it: {
+
+        navOverview: "Sintesi",
+        navSite: "Sito",
+        navConstruction: "Costruzione",
+        navMaterials: "Materiali",
+        navCost: "Costo",
+        navDelivery: "Consegna",
+
+        studyIndex:
+          "Indice dello studio",
+
+        study:
+          "Studio di fattibilità e consegna",
+
+        location:
+          "Cala Llamp · Andratx · Maiorca · Spagna",
+
+        explore:
+          "Esplora lo studio",
+
+        workingEstimate:
+          "Stima di lavoro",
+
+        vatExcluded:
+          "IVA non inclusa",
+
+        plot:
+          "Lotto",
+
+        months:
+          "mesi",
+
+        weeks:
+          "settimane",
+
+        workingBaseline:
+          "Base di pianificazione",
+
+        preconstruction:
+          "Pre-costruzione",
+
+        overview:
+          "Sintesi esecutiva di costruzione",
+
+        scope:
+          "Obiettivo e ambito",
+
+        siteHeading:
+          "Stato attuale e lavori eseguiti",
+
+        construction:
+          "Ambito di costruzione restante",
+
+        strategy:
+          "Strategia tecnica",
+
+        materials:
+          "Materiali e revisioni di progetto",
+
+        cost:
+          "Budget e trasparenza dei costi",
+
+        procurement:
+          "Pacchetti e approvvigionamento",
+
+        programme:
+          "Programma di costruzione",
+
+        risk:
+          "Rischi, controllo e prossimi passi",
+
+        conclusion:
+          "La fattibilità dipende dalla risoluzione delle interfacce prima di impegnare costi e programma."
+
+      },
+
+
+      de: {
+
+        navOverview: "Überblick",
+        navSite: "Grundstück",
+        navConstruction: "Bau",
+        navMaterials: "Materialien",
+        navCost: "Kosten",
+        navDelivery: "Ablauf",
+
+        studyIndex:
+          "Studienindex",
+
+        study:
+          "Machbarkeits- und Ausführungsstudie",
+
+        location:
+          "Cala Llamp · Andratx · Mallorca · Spanien",
+
+        explore:
+          "Studie erkunden",
+
+        workingEstimate:
+          "Arbeitsschätzung",
+
+        vatExcluded:
+          "zzgl. MwSt.",
+
+        plot:
+          "Grundstück",
+
+        months:
+          "Monate",
+
+        weeks:
+          "Wochen",
+
+        workingBaseline:
+          "Planungsbasis",
+
+        preconstruction:
+          "Vorlauf",
+
+        overview:
+          "Executive Construction Summary",
+
+        scope:
+          "Ziel & Umfang",
+
+        siteHeading:
+          "Aktueller Stand & ausgeführte Arbeiten",
+
+        construction:
+          "Verbleibender Bauumfang",
+
+        strategy:
+          "Technische Baustrategie",
+
+        materials:
+          "Materialien & Designrevisionen",
+
+        cost:
+          "Budget & Kostentransparenz",
+
+        procurement:
+          "Baupakete & Beschaffung",
+
+        programme:
+          "Bauprogramm",
+
+        risk:
+          "Risiko, Steuerung & nächste Schritte",
+
+        conclusion:
+          "Die Machbarkeit hängt davon ab, Schnittstellen vor Kosten- und Terminbindung zu klären."
+
+      },
+
+
+      ar: {
+
+        navOverview: "الملخص",
+        navSite: "الموقع",
+        navConstruction: "الإنشاء",
+        navMaterials: "المواد",
+        navCost: "الكلفة",
+        navDelivery: "التنفيذ",
+
+        studyIndex:
+          "فهرس الدراسة",
+
+        study:
+          "دراسة الجدوى والتنفيذ الإنشائي",
+
+        location:
+          "كالا يامب · أندراتش · مايوركا · إسبانيا",
+
+        explore:
+          "استعراض الدراسة",
+
+        workingEstimate:
+          "تقدير العمل",
+
+        vatExcluded:
+          "من دون ضريبة القيمة المضافة",
+
+        plot:
+          "مساحة الأرض",
+
+        months:
+          "شهراً",
+
+        weeks:
+          "أسابيع",
+
+        workingBaseline:
+          "خط الأساس التخطيطي",
+
+        preconstruction:
+          "ما قبل الإنشاء",
+
+        overview:
+          "الملخص التنفيذي للإنشاء",
+
+        scope:
+          "الهدف والنطاق",
+
+        siteHeading:
+          "الوضع الحالي والأعمال المنفذة",
+
+        construction:
+          "نطاق الأعمال المتبقية",
+
+        strategy:
+          "استراتيجية التنفيذ الفنية",
+
+        materials:
+          "المواد وتعديلات التصميم",
+
+        cost:
+          "الميزانية وشفافية الكلفة",
+
+        procurement:
+          "حزم الأعمال والمشتريات",
+
+        programme:
+          "البرنامج الإنشائي",
+
+        risk:
+          "المخاطر والضبط والخطوات التالية",
+
+        conclusion:
+          "تعتمد الجدوى على حسم نقاط الربط قبل تثبيت الكلفة والبرنامج."
+
+      }
+
+    };
+
+
+    /* =========================================================
+       LANGUAGE
+    ========================================================= */
+
+    const languageSelect =
+      document.getElementById("language");
+
+
+    function setLanguage(locale) {
+
+      const dictionary =
+        translations[locale] ||
+        translations.en;
+
+
+      document.documentElement.lang =
+        locale === "ar"
+          ? "ar-LB"
+          : locale;
+
+
+      document.documentElement.dir =
+        locale === "ar"
+          ? "rtl"
+          : "ltr";
+
+
+      document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+          const key =
+            element.dataset.i18n;
+
+
+          if (dictionary[key]) {
+
+            element.textContent =
+              dictionary[key];
+
+          }
+
+        });
+
+
+      languageSelect.value =
+        locale;
+
+
+      localStorage.setItem(
+        "villa-congre-language",
+        locale
+      );
+
+    }
+
+
+    languageSelect.addEventListener(
+      "change",
+      event => {
+
+        setLanguage(
+          event.target.value
+        );
+
+      }
+    );
+
+
+    setLanguage(
+      localStorage.getItem(
+        "villa-congre-language"
+      ) || "en"
+    );
+
+
+    /* =========================================================
+       STUDY INDEX
+    ========================================================= */
+
+    const studyIndex =
+      document.getElementById(
+        "studyIndex"
+      );
+
+
+    const indexOpen =
+      document.getElementById(
+        "indexOpen"
+      );
+
+
+    const indexClose =
+      document.getElementById(
+        "indexClose"
+      );
+
+
+    let previousFocus =
+      null;
+
+
+    function openStudyIndex() {
+
+      previousFocus =
+        document.activeElement;
+
+
+      studyIndex.classList.add(
+        "open"
+      );
+
+
+      document.body.style.overflow =
+        "hidden";
+
+
+      indexClose.focus();
+
+    }
+
+
+    function closeStudyIndex() {
+
+      studyIndex.classList.remove(
+        "open"
+      );
+
+
+      document.body.style.overflow =
+        "";
+
+
+      if (previousFocus) {
+
+        previousFocus.focus();
+
+      }
+
+    }
+
+
+    indexOpen.addEventListener(
+      "click",
+      openStudyIndex
+    );
+
+
+    indexClose.addEventListener(
+      "click",
+      closeStudyIndex
+    );
+
+
+    studyIndex
+      .querySelectorAll("a")
+      .forEach(link => {
+
+        link.addEventListener(
+          "click",
+          closeStudyIndex
+        );
+
+      });
+
+
+    document.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key === "Escape" &&
+          studyIndex.classList.contains("open")
+        ) {
+
+          closeStudyIndex();
+
+        }
+
+
+        if (
+          event.key === "Tab" &&
+          studyIndex.classList.contains("open")
+        ) {
+
+          const focusable =
+            [
+              ...studyIndex.querySelectorAll(
+                "button,a"
+              )
+            ];
+
+
+          const first =
+            focusable[0];
+
+
+          const last =
+            focusable[
+              focusable.length - 1
+            ];
+
+
+          if (
+            event.shiftKey &&
+            document.activeElement === first
+          ) {
+
+            event.preventDefault();
+
+            last.focus();
+
+          }
+
+
+          else if (
+            !event.shiftKey &&
+            document.activeElement === last
+          ) {
+
+            event.preventDefault();
+
+            first.focus();
+
+          }
+
+        }
+
+      }
+    );
+
+
+    /* =========================================================
+       REVEAL
+    ========================================================= */
+
+    if (
+      "IntersectionObserver" in window &&
+      !window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches
+    ) {
+
+      const observer =
+        new IntersectionObserver(
+
+          entries => {
+
+            entries.forEach(
+              entry => {
+
+                if (
+                  entry.isIntersecting
+                ) {
+
+                  entry.target
+                    .classList
+                    .add("visible");
+
+
+                  observer.unobserve(
+                    entry.target
+                  );
+
+                }
+
+              }
+            );
+
+          },
+
+          {
+            threshold: 0.08
+          }
+
+        );
+
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach(
+          element =>
+            observer.observe(element)
+        );
+
+    }
+
+    else {
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach(
+          element =>
+            element.classList.add(
+              "visible"
+            )
+        );
+
+    }
+  </script>
+
+
+  <!--
+  ============================================================
+  RESOURCE MANIFEST
+  ============================================================
+
+  Project:
+  Villa Congre Nº3
+
+  Verified real-site photograph:
+  https://res.cloudinary.com/dqje367sj/image/upload/v1789242349/960DFF8B-C46D-4F2A-94D3-9D2D5394D416_2_xmdcri.png
+
+  Verified indicative terrain diagram:
+  https://res.cloudinary.com/dqje367sj/image/upload/v1789242534/86D5A640-92F4-46F9-981B-FA43530315A4_3_i75mnp.png
+
+  Architectural renders:
+  Insert verified Cloudinary URLs into the ASSETS registry.
+
+  Programme:
+  HTML + CSS + vanilla JavaScript.
+
+  BOQ:
+  HTML + JavaScript-generated rows.
+
+  Technical diagrams:
+  HTML / CSS plus verified terrain image.
+
+  External JavaScript:
+  none.
+
+  External libraries:
+  none.
+
+  External fonts:
+  none.
+
+  Secret keys:
+  none.
+
+  current-to-proposed-reference:
+  unavailable.
+
+  Same-perspective before/after:
+  intentionally not created.
+
+  ============================================================
+  -->
+
+</body>
+</html>
